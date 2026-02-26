@@ -3,9 +3,10 @@ import './App.css'
 import Events from './components/Events'
 import Hero from './components/Hero'
 import ProductList from './components/ProductList'
-import State from './components/State'
+
 
 import Table from './components/Table'
+import TasbeehApp from './components/TasbeehApp'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
       {/* <Hero />
       <Table />
       <ProductList /> */}
-    <State />
+    <TasbeehApp />
       <Events />
     </>
   )
