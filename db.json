@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "The Future of Web Development",
+      "body": "Web development continues to evolve with new tools, frameworks, and best practices shaping the industry.",
+      "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "Understanding React Basics",
+      "body": "React makes it painless to create interactive UIs using reusable components.",
+      "imageUrl": "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+    },
+    {
+      "userId": 2,
+      "id": 3,
+      "title": "Mastering JavaScript",
+      "body": "JavaScript is the backbone of modern web applications.",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c"
+    },
+    {
+      "userId": 2,
+      "id": 4,
+      "title": "CSS Grid vs Flexbox",
+      "body": "Learn the differences and when to use Grid or Flexbox.",
+      "imageUrl": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2"
+    },
+    {
+      "userId": 3,
+      "id": 5,
+      "title": "Backend with Node.js",
+      "body": "Node.js allows JavaScript to run on the server side.",
+      "imageUrl": "https://images.unsplash.com/photo-1581276879432-15e50529f34b"
+    },
+    {
+      "userId": 3,
+      "id": 6,
+      "title": "REST APIs Explained",
+      "body": "REST APIs allow communication between frontend and backend systems.",
+      "imageUrl": "https://images.unsplash.com/photo-1504639725590-34d0984388bd"
+    },
+    {
+      "userId": 4,
+      "id": 7,
+      "title": "Introduction to Databases",
+      "body": "Databases store and organize data efficiently.",
+      "imageUrl": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d"
+    },
+    {
+      "userId": 4,
+      "id": 8,
+      "title": "UI/UX Design Principles",
+      "body": "Good design improves usability and user satisfaction.",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+    },
+    {
+      "userId": 5,
+      "id": 9,
+      "title": "Git and Version Control",
+      "body": "Git helps developers track and manage code changes.",
+      "imageUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb"
+    },
+    {
+      "userId": 5,
+      "id": 10,
+      "title": "Deploying Applications",
+      "body": "Learn how to deploy your applications to production.",
+      "imageUrl": "https://images.unsplash.com/photo-1518779578993-ec3579fee39f"
+    }
+  ]
+}
+

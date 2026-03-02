@@ -3,6 +3,7 @@ import './App.css'
 import ControlledComponent from './components/ControlledComponent'
 import Events from './components/Events'
 import Hero from './components/Hero'
+import Posts from './components/Posts'
 import ProductList from './components/ProductList'
 
 
@@ -18,6 +19,7 @@ function App() {
       {/* <Hero />
       <Table />
       <ProductList /> */}
+      <Posts />
     <ControlledComponent />
     <TasbeehApp  />
       <Events />
