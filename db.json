@@ -4,7 +4,7 @@
       "userId": 1,
       "id": 1,
       "title": "The Future of Web Development",
-      "body": "Web development continues to evolve with new tools, frameworks, and best practices shaping the industry.",
+      "body": " lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit.Web development continues to evolve with new tools, frameworks, and best practices shaping the industry.",
       "imageUrl": "https://images.unsplash.com/photo-1498050108023-c5249f4df085"
     },
     {
@@ -72,4 +72,3 @@
     }
   ]
 }
-

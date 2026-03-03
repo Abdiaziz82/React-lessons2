@@ -1,4 +1,4 @@
-export default function PostCard({ post }) {
+export default function PostCard({ post, onReadMore}) {
   return (
     <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300">
 
@@ -15,13 +15,13 @@ export default function PostCard({ post }) {
           {post.body.substring(0, 80)}...
         </p>
 
-   {/* <img
-        src={imageUrl}
-        alt={title}
+   <img
+        src={post.imageUrl}
+        alt={post.title}
         className="w-full h-48 object-cover"
-      /> */}
+      />
         <button
-         
+         onClick={onReadMore}
           className="bg-gray-800 text-white px-4 py-2 mt-8 rounded-lg hover:bg-gray-900 transition"
         >
           Read More
