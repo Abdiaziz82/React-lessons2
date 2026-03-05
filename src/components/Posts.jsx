@@ -70,7 +70,7 @@ function handleDelete(postId) {
   })
   .then(response => {
     if(!response.ok) throw new Error("failed to delte post")
-      setPosts(prev => prev.filter(post => post.id =! postId))
+      setPosts(prev => prev.filter(post => post.id !== postId))
   })
 }
 
