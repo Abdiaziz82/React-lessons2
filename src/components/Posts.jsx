@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import PostCard from "./PostCard";
 import SinglePost from "./SinglePost";
+import AddPost from "./AddPost";
+
 
 export default function Posts() {
 const[errors,setErrors] = useState(null)
 const[posts , setPosts] = useState([])
 const[loading,setLoading] = useState(true)
 const[selectedPostId,setSelectedPostId] =useState(null)
+
 useEffect(() => {
   fetch("http://localhost:3000/posts")
   .then(response => response.json())
@@ -23,6 +26,10 @@ useEffect(() => {
 
 },[])
 
+
+function handleAdd(newPost)  {
+  setPosts(prev => [...prev , newPost])
+}
 if(selectedPostId) {
   return (
     <SinglePost
@@ -32,6 +39,7 @@ if(selectedPostId) {
     />
   )
 }
+
 
 
 if (loading) {
@@ -55,6 +63,17 @@ if (errors) {
   )
 }
 
+function handleDelete(postId) {
+
+  fetch(`http://localhost:3000/posts/${postId}` , {
+    method:"DELETE"
+  })
+  .then(response => {
+    if(!response.ok) throw new Error("failed to delte post")
+      setPosts(prev => prev.filter(post => post.id =! postId))
+  })
+}
+
 
   return (
       <div className="min-h-screen bg-gray-100 p-6">
@@ -64,16 +83,20 @@ if (errors) {
 
     <div className="max-w-7xl mx-auto flex gap-8">
       
-      
+     <div className="w-93">
+      <AddPost
+      onAdd = {handleAdd}
+      />
+     </div>
 
       {/* RIGHT SIDE - POSTS */}
-      <div className="flex-1 grid md:grid-cols-3 gap-6">
+      <div className="flex-1 grid md:grid-cols-2 gap-6">
         {posts.map(post => (
           <PostCard
             key={post.id}
             post={post}
             onReadMore = {() =>setSelectedPostId(post.id)}
-           
+            onDelete  = {() => handleDelete(post.id)}
           />
         ))}
       </div>
