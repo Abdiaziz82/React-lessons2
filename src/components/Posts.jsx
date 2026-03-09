@@ -17,7 +17,7 @@ useEffect(() => {
     setPosts(data)
    setLoading(false)
   })
-  .catch(error =>{ 
+  .catch(error =>{  
     console.log(error)
   setErrors("unable to connect. please try again later ")
   setLoading(false)
